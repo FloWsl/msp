@@ -1,0 +1,21 @@
+{
+  "name": "MyStunningPets",
+  "short_name": "MSP",
+  "description": "Créez des portraits personnalisés uniques de vos animaux de compagnie",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F7",
+  "theme_color": "#D4B499",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

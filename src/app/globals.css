@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../styles/animations.css';
+
+@layer base {
+  :root {
+    --background: 39 33% 97%;
+    --primary: 27 31% 71%;
+    --secondary: 230 17% 21%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-secondary antialiased;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better tap targets on mobile */
+@media (max-width: 768px) {
+  button, a {
+    @apply min-h-[44px] min-w-[44px];
+  }
+}
+
+/* Loading state styles */
+.loading {
+  @apply animate-pulse cursor-not-allowed opacity-70;
+}
+
+/* Focus styles */
+:focus-visible {
+  @apply outline-none ring-2 ring-secondary ring-offset-2;
+}
+
+/* Selection styles */
+::selection {
+  @apply bg-primary/20 text-secondary;
+}
